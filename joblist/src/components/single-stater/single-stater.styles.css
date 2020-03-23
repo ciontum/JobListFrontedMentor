@@ -1,0 +1,36 @@
+.single-stater_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-right: 1em;
+  color: #7b8e8e;
+  font-weight: bold;
+  font-size: 0.5rem;
+  line-height: 2.5;
+  background: #f0fafb;
+  border-radius: 2px;
+  height: 20px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-stater_item p {
+  margin: 0 0.5em;
+}
+
+.single-stater_item .single-stater_remove {
+  width: 100%;
+  height: 100%;
+  padding: 0em 0.6em;
+  background: #72b0b0;
+  color: white;
+  border-bottom-right-radius: 2px;
+  border-top-right-radius: 2px;
+  cursor: pointer;
+}
+
+.single-stater_item .single-stater_remove:hover {
+  background: black;
+}
+/*# sourceMappingURL=single-stater.styles.css.map */
