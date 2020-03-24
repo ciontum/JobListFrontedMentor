@@ -49,10 +49,11 @@
         flex-direction: column;
         justify-content: space-between;
         padding:0.7em 0;
-        
+        width:40%;
         @media screen and (max-width:375px){
             margin-bottom:1em;
             border-bottom:1px solid grey;
+            width:100%;
         }
         & .company-box_content_title{
             color:black;

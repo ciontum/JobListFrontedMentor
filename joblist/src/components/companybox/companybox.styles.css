@@ -86,12 +86,14 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0.7em 0;
+  width: 40%;
 }
 
 @media screen and (max-width: 375px) {
   .company-box_container .company-box_content_container {
     margin-bottom: 1em;
     border-bottom: 1px solid grey;
+    width: 100%;
   }
 }
 
