@@ -9,6 +9,10 @@
     border-radius:2px;
     height: 20px;
     align-items: center;
+    
+    @media screen and (max-width:375px){
+        margin-bottom:1em;
+    }
     & p{
         margin:0 0.5em;
     }

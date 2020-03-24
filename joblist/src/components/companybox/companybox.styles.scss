@@ -49,16 +49,34 @@
         flex-direction: column;
         justify-content: space-between;
         padding:0.7em 0;
+        
+        @media screen and (max-width:375px){
+            margin-bottom:1em;
+            border-bottom:1px solid grey;
+        }
         & .company-box_content_title{
             color:black;
              font-size: 0.8rem;
             font-weight: 800;
+            
+        @media screen and (max-width:375px){
+            font-size:0.7rem;
+            margin-bottom:0.5em;
+        }
         }
         & .company-box_content_header{
+            
+        @media screen and (max-width:375px){
+            margin-bottom:0.5em;
+        }
             & .company-box_content_header_name{
                 font-size:0.7rem;
                 color:rgb(114,176,176);
                 font-weight: bold;
+                
+        @media screen and (max-width:375px){
+            font-size:0.6rem;
+        }
             }
         }
     & ul{
@@ -67,10 +85,15 @@
         justify-content: space-between;
         margin:0;
         padding:0;
-        width:200px;
+        max-width:200px;
+        width:90%;
         & li{
             font-size:0.7rem;
             color:grey;
+            
+        @media screen and (max-width:375px){
+            font-size:0.5rem;
+        }
             & span{
             position:relative;
             left:5px;

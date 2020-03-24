@@ -15,6 +15,12 @@
           align-items: center;
 }
 
+@media screen and (max-width: 375px) {
+  .single-stater_item {
+    margin-bottom: 1em;
+  }
+}
+
 .single-stater_item p {
   margin: 0 0.5em;
 }
