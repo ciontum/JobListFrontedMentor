@@ -6,7 +6,7 @@ const Header=()=>{
 return (
     <header>
     {
-    <HeaderPhoto style={{width:"100vw"}}/ >
+    <HeaderPhoto style={{width:"100vw"}} alt="header"/ >
     }
     </header>
 )

@@ -17,6 +17,8 @@ const CompanyList=({companiesFilter})=>{
                                                          companyName={company.name} 
                                                          roleName={company.role}
                                                           tags={company.tags}   
+                                                          metaTags={company.metaTags}
+                                                          nameTags={company.nameTags}
                                                           svg={svg}/>
 
             })

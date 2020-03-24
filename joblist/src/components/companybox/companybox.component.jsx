@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react"
 import "./companybox.styles.css"
 import SingleStater from "../single-stater/single-stater.component"
-const CompanyBox=({companyName,roleName,tags,svg})=>{
+const CompanyBox=({companyName,roleName,tags,svg,metaTags,nameTags})=>{
     const [newSvg,setNewSvg]=useState('')
     useEffect(()=>{
         let newSvg=svg.filter(svgs=>svgs.includes(companyName.toLowerCase()))
@@ -11,22 +11,40 @@ const CompanyBox=({companyName,roleName,tags,svg})=>{
      return(
             <div className="company-box_container">
                 <div className="company-box_image">
-                <img src={newSvg} />
+                <img src={newSvg} alt="logo" />
                 </div>
                 <div className="company-box_content_container">
                     <div className="company-box_content_header">
                         <span className="company-box_content_header_name">{companyName}</span>
+                        {
+                            nameTags?
+                            nameTags.new ?
+
+                            <span className="company-box_content_header_new">NEW!</span>
+                            :
+                            <></>
+                            :<></>
+                        }
+                        {
+                            nameTags?
+                                nameTags.featured?
+                            <span className="company-box_content_header_new" style={{marginLeft:"0",background:"black"}}>FEATURED</span>
+                            :
+                            <></>
+                            :
+                            <></>
+                        }
                     </div>
                     <div className="company-box_content_title">{roleName}</div>
                     <ul className="company-box_content_details">
                         <li className="list-style_none">
-                            <span>1d ago</span>
+                            <span>{metaTags.day} ago</span>
                         </li>
                         <li>
-                           <span>Full Time</span>
+                           <span>{metaTags.hours}</span>
                         </li>
                         <li>
-                           <span> USA only</span>
+                           <span> {metaTags.region}</span>
                         </li>
                     </ul>
                 </div>
